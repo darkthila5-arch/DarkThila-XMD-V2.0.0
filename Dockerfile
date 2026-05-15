@@ -26,7 +26,7 @@ COPY lib/api-client-react/package.json ./lib/api-client-react/
 COPY lib/api-zod/package.json ./lib/api-zod/
 COPY lib/db/package.json ./lib/db/
 
-RUN pnpm install --no-frozen-lockfile
+RUN pnpm install --no-frozen-lockfile --config.minimumReleaseAge=0
 
 COPY . .
 
